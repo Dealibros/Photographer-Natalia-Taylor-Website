@@ -16,7 +16,7 @@
         <!-- link for fancybox -->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
 
-         <link rel="stylesheet" href="style.css"/>
+         <link rel="stylesheet" href="/style.css"/>
          <link rel="stylesheet" href="protStyle.css">
     
         <title> Natalia Taylor | Photographer </title>
@@ -43,17 +43,16 @@
         </div>
         </nav>
     </header>
-   
-
-        <div class="row row-own container-fluid pb-3 mb-3">
-            <div class="col-3 col_prot1"><a href="portPortrait.html"><h1 class="text-center p-5 textColor-1 mt-5 mb-3">Portrait</h1> </a></div>
-            <div class="col-3 col_prot2"><a href="portNature.html"><h1 class="text-center p-5 textColor-1 mt-5 mb-3">Nature</h1> </a></div>
-            <div class="col-3 col_prot3"><a href="portEvents.html"><h1 class="text-center p-5 textColor-1 mt-5 mb-3">Events</h1> </a></div>
-            <div class="col-3 col_prot4"><a href="portFashion.html"><h1 class="text-center p-5 textColor-1 mt-5 mb-3">Fashion</h1> </a></div>
-          </div>
- </main>
-         
- <h1 class="text-center p-3 textColor-1 mt-4 mb-2">Fashion</h1>
+        <main class="bgColor-3 p-4">
+    
+            <div class="container container-fluid pb-3 mb-3">
+           
+              <div id="showH1Events"></div>
+              <div id="showEventsPic" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <!-- dynamic content -->
+              </div>
+            </div>
+          </main>
 
 
 
@@ -77,6 +76,60 @@
     <script src="app.js"></script>
     <script src="protScript.js"></script>
 
+    <script>
+      
+let arrayEvents= [];
+class Events {
+    imgId;
+    imgUrl;
+    constructor(imgId,imgUrl) {
+        this.imgId=imgId;
+        this.imgUrl=imgUrl;
+         arrayEvents.push(this); // pushing each property into array
+       }
+     
+
+       divideDiv1() {
+        return `
+        <div class="col cardZoom">
+        <div class="card h-100 rounded-3 shadow bgColor-3">
+        <a href="img/portEvents/${this.imgUrl}" class="fancbox" data-fancybox="gallery2">
+        <img src="img/portEvents/${this.imgUrl}" class="d-md-block card-img-top" alt="..."  width="100%"  height="100%">
+       </a>
+       
+          </div>
+        </div>
+
+        `
+      }
+        
+      divideDiv2() {
+        return``;
+      }
+} 
+
+
+
+new Events(1,"events1.jpg");
+new Events(2,"events2.jpg");
+new Events(3,"events3.jpg");
+new Events(4,"events4.jpg");
+new Events(5,"events5.jpg");
+new Events(6,"events6.jpg");
+new Events(7,"events7.jpg");
+new Events(8,"events8.jpg");
+
+
+
+
+for (let value of arrayEvents) {
+  document.getElementById("showH1Events").innerHTML = `<section id="events"><h1 class="text-center p-3 textColor-1 mt-4 mb-2">Events</h1></section>`;
+  document.getElementById("showEventsPic").innerHTML += `${value.divideDiv1()}`;
+}
+
+
+
+    </script>
     
   </body>
   </html>

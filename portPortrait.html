@@ -16,7 +16,7 @@
         <!-- link for fancybox -->
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
 
-         <link rel="stylesheet" href="style.css"/>
+         <link rel="stylesheet" href="/style.css"/>
          <link rel="stylesheet" href="protStyle.css">
     
         <title> Natalia Taylor | Photographer </title>
@@ -43,17 +43,17 @@
         </div>
         </nav>
     </header>
-   
-
-        <div class="row row-own container-fluid pb-3 mb-3">
-            <div class="col-3 col_prot1"><a href="portPortrait.html"><h1 class="text-center p-5 textColor-1 mt-5 mb-3">Portrait</h1> </a></div>
-            <div class="col-3 col_prot2"><a href="portNature.html"><h1 class="text-center p-5 textColor-1 mt-5 mb-3">Nature</h1> </a></div>
-            <div class="col-3 col_prot3"><a href="portEvents.html"><h1 class="text-center p-5 textColor-1 mt-5 mb-3">Events</h1> </a></div>
-            <div class="col-3 col_prot4"><a href="portFashion.html"><h1 class="text-center p-5 textColor-1 mt-5 mb-3">Fashion</h1> </a></div>
-          </div>
- </main>
-         
- <h1 class="text-center p-3 textColor-1 mt-4 mb-2">Fashion</h1>
+        <main class="bgColor-3 p-4">
+    
+            <div class="container container-fluid pb-3 mb-3">
+           
+              <!-- here comes the dynamic LOCATION content from JS-->
+              <div id="showH1Portrait"></div>
+              <div id="showPortraitPic" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                <!-- dynamic content -->
+              </div>
+            </div>
+          </main>
 
 
 
@@ -75,7 +75,62 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
     <script src="app.js"></script>
-    <script src="protScript.js"></script>
+    <script src="portScript.js"></script>
+
+    <script>
+let arrayPortrait= [];
+
+
+
+
+
+class Portrait{
+  imgId;
+  imgUrl;
+  
+  constructor(imgId,imgUrl) {
+   this.imgId=imgId;
+   this.imgUrl=imgUrl;
+    arrayPortrait.push(this); // pushing each property into array
+  }
+
+ 
+  divideDiv1() {
+    return `
+    <div class="col cardZoom">
+    <div class="card h-100 rounded-3 shadow bgColor-3">
+    <a href="img/portPortrait/${this.imgUrl}" class="fancbox" data-fancybox="gallery1">
+    <img src="img/portPortrait/${this.imgUrl}" class=" d-md-block card-img-top" alt="..."  width="100%"  height="100%">
+      </a>
+      </div>
+    </div>
+    `
+  }
+    
+  divideDiv2() {
+    return ``;
+  }
+}
+
+
+
+new Portrait(1,"portrait1.jpg");
+new Portrait(2,"portrait2.jpg");
+new Portrait(3,"portrait3.jpg");
+new Portrait(4,"portrait4.jpg");
+new Portrait(5,"portrait5.jpg");
+new Portrait(6,"portrait6.jpg");
+new Portrait(7,"portrait7.jpg");
+new Portrait(8,"portrait8.jpg");
+
+
+
+// looping through the objects and printing them on the browser
+for (let value of arrayPortrait) {
+  document.getElementById("showH1Portrait").innerHTML = `<section id=""><h1 class="text-center p-3 textColor-1 mb-2">Portrait</h1></section>`;
+  document.getElementById("showPortraitPic").innerHTML += `${value.divideDiv1()}`;
+}
+    </script>
 
     
   </body>

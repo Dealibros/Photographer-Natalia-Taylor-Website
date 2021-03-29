@@ -48,8 +48,8 @@
             <div class="container container-fluid pb-3 mb-3">
            
               <!-- here comes the dynamic LOCATION content from JS-->
-              <div id="showH1Portrait"></div>
-              <div id="showPortraitPic" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+              <div id="showH1Fashion"></div>
+              <div id="showFashionPic" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                 <!-- dynamic content -->
               </div>
             </div>
@@ -58,7 +58,7 @@
 
 
         <footer>
-        <h4>Natalia Taylor &copy; 2020</h4>
+        <h4>Natalia Taylor &copy; 2021</h4>
         <ul>
             <li><a href="#"><img src="/img/youtube-symbol 1.svg" alt="youtube-social-media"></a></li>
             <li><a href="#"><img src="/img/twitter 1.svg" alt="twitter-social-media"></a></li>
@@ -77,6 +77,56 @@
     <script src="app.js"></script>
     <script src="protScript.js"></script>
 
+    <script>
+
+let arrayFashion= [];
+class Fashion {
+    imgId;
+    imgUrl;
+    constructor(imgId,imgUrl) {
+        this.imgId=imgId;
+        this.imgUrl=imgUrl;
+        arrayFashion.push(this); // pushing each property into array
+       }
+     
+
+       divideDiv1() {
+        return `
+        <div class="col cardZoom">
+        <div class="card h-100 rounded-3 shadow bgColor-3">
+        <a href="img/portFashion/${this.imgUrl}" class="fancbox" data-fancybox="gallery2">
+        <img src="img/portFashion/${this.imgUrl}" class="d-md-block card-img-top" alt="..."  width="100%"  height="100%">
+        </a>
+          </div>
+        </div>
+        `
+      }
+        
+      divideDiv2() {
+        return ` `;
+      }
+} 
+
+
+
+new Fashion(1,"Fashion1.jpg");
+new Fashion(2,"Fashion2.jpg");
+new Fashion(3,"Fashion3.jpg");
+new Fashion(4,"Fashion4.jpg");
+new Fashion(5,"Fashion5.jpg");
+new Fashion(6,"Fashion6.jpg");
+new Fashion(7,"Fashion7.jpg");
+new Fashion(8,"Fashion8.jpg");
+
+
+
+
+for (let value of arrayFashion) {
+  document.getElementById("showH1Fashion").innerHTML = `<section id="events"><h1 class="text-center p-3 textColor-1 mt-4 mb-2">Fashion</h1></section>`;
+  document.getElementById("showFashionPic").innerHTML += `${value.divideDiv1()}`;
+}
+
+    </script>
     
   </body>
   </html>

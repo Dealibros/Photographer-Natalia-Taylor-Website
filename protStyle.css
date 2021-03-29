@@ -53,19 +53,19 @@
 
 
 
-
-
-
-
 .cardZoom {
  
   transition: transform 0.5s ease-in-out;
+ 
+ 
 
 }
 
+
+
 .cardZoom:hover {
  
-          transform: scale(1.1);
+          /* transform: scale(1.1); */
 
           filter: brightness(80%);
 }
@@ -114,9 +114,9 @@ margin-top: 3rem;
 }
 .col_prot1{
   background-color: antiquewhite;
-  background-image: url(img/protPortrait/portrait2.jpg);
-  width: 200px;
-  height: 150px;
+  background-image: url(img/portPortrait/portrait3.jpg);
+  min-width: 200px;
+  height: 200px;
   padding:4px; 
   border: 5px solid #fff;
   background-repeat: no-repeat;
@@ -127,9 +127,9 @@ margin-top: 3rem;
 }
 .col_prot2{
   background-color: antiquewhite;
-  background-image: url(img/p4.jpg);
+  background-image: url(img/portNature/nature1.jpg);
   width: 200px;
-  height: 150px;
+  height: 200px;
   padding:4px; 
   border: 5px solid #fff;
   background-repeat: no-repeat;
@@ -141,9 +141,9 @@ margin-top: 3rem;
 }
 .col_prot3{
   background-color: antiquewhite;
-  background-image: url(img/p4.jpg);
-  width: 200px;
-  height: 150px;
+  background-image: url(img/portEvents/events1.jpg);
+  min-width:200px;
+  height:200px;
   padding:4px; 
   border: 5px solid #fff;
   background-repeat: no-repeat;
@@ -155,9 +155,9 @@ margin-top: 3rem;
 }
 .col_prot4{
   background-color: antiquewhite;
-  background-image: url(img/p4.jpg);
+  background-image: url(img/portFashion/fashion.jpg);
   width: 200px;
-  height: 150px;
+  height: 200px;
   padding:4px; 
   border: 5px solid #fff;
   background-repeat: no-repeat;
@@ -167,3 +167,8 @@ margin-top: 3rem;
   text-align: center;
 
 }
+/* #showEventsPic{
+  min-height: 10rem;
+  background-color: #fff;
+} */
+
