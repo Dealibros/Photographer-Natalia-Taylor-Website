@@ -38,7 +38,8 @@ label,
 input,
 a,
 p {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 500;
 }
 h2 {
   font-size: 3.5rem;
@@ -99,13 +100,15 @@ nav {
 }
 
 .title {
-  font-size: 6rem;
+  font-size: 7rem;
   font-family: "Vibes", sans-serif;
+  color: #423e3e;
 }
 .nav-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex: 1 1 20rem;
+  padding-right: 3rem;
 }
 
 .hero {
@@ -131,12 +134,6 @@ nav {
   padding-top: 3rem;
 }
 
-.hero-introduction a {
-  padding: 2rem 8rem;
-  border: 3px solid black;
-  margin-top: 4rem;
-}
-
 .hero-images {
   flex: 1 1 40rem;
   background: linear-gradient(#dad8dd, #dad1d4);
@@ -150,10 +147,30 @@ nav {
   object-fit: cover;
 }
 
-link-portfolio {
-  border-radius: 50%;
-  background-color: #b49999;
+.link-portfolio {
+  border-radius: 4%;
+  background-color: rgb(137, 148, 143);
+  margin-bottom: 4rem;
+  padding: 2rem 8rem;
+  border: 2px solid black;
+  margin-top: 4rem;
+  box-shadow: 5px 5px 5px grey;
 }
+
+.socialMedia ul {
+  display: flex;
+  flex: 1 1 40rem;
+  align-items: center;
+}
+
+.socialMedia ul li img {
+  border: none;
+  padding: 1.5rem;
+  margin: 2rem 1rem;
+  border-radius: 20%;
+  border-color: gray;
+}
+
 .plant {
   position: absolute;
   bottom: 0;
@@ -163,11 +180,11 @@ link-portfolio {
   animation: plant-entrance 1.5s ease-in-out 0.5s forwards,
     plant-shake 2.5s infinite ease alternate-reverse 2s;
   transform-origin: bottom;
-  max-height: 80%;
+  max-height: 100%;
 }
 
 .plant2 {
-  left: 40%;
+  left: 70%;
 }
 
 /*Animations*/
@@ -213,15 +230,11 @@ footer {
   align-items: center;
   flex-wrap: wrap;
 }
-footer ul {
-  display: flex;
-  flex: 1 1 40rem;
-  justify-content: space-between;
-  align-items: center;
-}
+
 footer h4 {
   flex: 3 1 40rem;
-  font-size: calc(1.4rem +1vw);
+  font-size: 2rem;
+  text-align: center;
 }
 
 @media screen and(max-width:842px) {
