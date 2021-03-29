@@ -22,6 +22,10 @@
   src: url("/fonts/GreatVibes-Regular.ttf");
 }
 
+@font-face {
+  font-family: "New Tegomin";
+  src: url("/fonts/NewTegomin-Regular.ttf");
+}
 /* Home Page */
 
 html {
@@ -32,14 +36,22 @@ html {
 h1 {
   font-size: 3rem;
 }
-li,
+
+li {
+  font-weight: 500;
+  font-family: "New Tegomin";
+}
+
+p {
+  font-size: 2.8rem;
+  font-family: 'New Tegomin';
+} 
+
 button,
 label,
-input,
-a,
-p {
-  font-size: 2.5rem;
-  font-weight: 500;
+input {
+  font-size: 2.4rem;
+  
 }
 h2 {
   font-size: 3.5rem;
@@ -59,6 +71,8 @@ ul {
 a {
   text-decoration: none;
   color: black;
+  font-size: 2.4rem;
+  font-weight: 500;
 }
 
 .flex {
@@ -93,22 +107,26 @@ nav {
   background-color: #b49999;
 }
 
+a:hover {
+  color: rgb(104, 117, 111);
+}
+
 #logo {
   flex: 1 1 20rem;
   padding-left: 5rem;
   font-size: 4rem;
+  font-weight: 500;
 }
 
 .title {
-  font-size: 7rem;
+  font-size: 8rem;
   font-family: "Vibes", sans-serif;
   color: #423e3e;
 }
 .nav-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex: 1 1 20rem;
-  padding-right: 3rem;
 }
 
 .hero {
@@ -149,7 +167,7 @@ nav {
 
 .link-portfolio {
   border-radius: 4%;
-  background-color: rgb(137, 148, 143);
+  background-color: rgb(158, 170, 164);
   margin-bottom: 4rem;
   padding: 2rem 8rem;
   border: 2px solid black;
@@ -230,6 +248,13 @@ footer {
   align-items: center;
   flex-wrap: wrap;
 }
+
+/* footer ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+} */
 
 footer h4 {
   flex: 3 1 40rem;
