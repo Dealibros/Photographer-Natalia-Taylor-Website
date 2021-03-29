@@ -1,0 +1,169 @@
+
+.bgColor-1 {
+  background-color: #fff;
+}
+
+.bgColor-2 {
+  background-color: #000;
+}
+
+.bgColor-3 {
+  background-color: #525252;
+}
+
+.bgColor-4 {
+  background-color: #1E2128;
+}
+
+/* font color variables*/
+.textColor-1 {
+  color: #fff;
+}
+
+.textColor-1-opacity {
+  color: #fff;
+}
+
+.textColor-2 {
+  color: #000;
+}
+
+.textColor-3 {
+  color: #525252;
+}
+
+.textColor-4 {
+  color: #1E2128;
+}
+
+
+
+
+.bg-image .maskBg {
+
+  box-shadow: inset 15px 40px 50px rgba(0, 0, 0, 0.3), inset -15px -40px 50px rgba(0, 0, 0, 0.3);
+}
+
+.bg-image h1 {
+  font-size: 3.5em;
+  padding-top: 2.5em;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+
+.cardZoom {
+ 
+  transition: transform 0.5s ease-in-out;
+
+}
+
+.cardZoom:hover {
+ 
+          transform: scale(1.1);
+
+          filter: brightness(80%);
+}
+
+
+
+
+
+.scrollUp:hover {
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: auto !important;
+  }
+}
+.alignCenter {
+  margin: 0 auto;
+}
+
+/* .col_menu{
+  background-color: aqua;
+  height: 200px;
+  width: 200px;
+} */
+
+
+
+.row-own{
+  justify-content: center;
+  
+}
+
+.col_prot a{
+  text-decoration: none;
+
+}
+
+a> p{
+text-align: center;
+color:rgb(14, 5, 5);
+font-weight: bolder;
+margin-top: 3rem;
+}
+.col_prot1{
+  background-color: antiquewhite;
+  background-image: url(img/protPortrait/portrait2.jpg);
+  width: 200px;
+  height: 150px;
+  padding:4px; 
+  border: 5px solid #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  text-align: center;
+}
+.col_prot2{
+  background-color: antiquewhite;
+  background-image: url(img/p4.jpg);
+  width: 200px;
+  height: 150px;
+  padding:4px; 
+  border: 5px solid #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+.col_prot3{
+  background-color: antiquewhite;
+  background-image: url(img/p4.jpg);
+  width: 200px;
+  height: 150px;
+  padding:4px; 
+  border: 5px solid #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+.col_prot4{
+  background-color: antiquewhite;
+  background-image: url(img/p4.jpg);
+  width: 200px;
+  height: 150px;
+  padding:4px; 
+  border: 5px solid #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  text-align: center;
+
+}
