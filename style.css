@@ -26,6 +26,7 @@
   font-family: "New Tegomin";
   src: url("/fonts/NewTegomin-Regular.ttf");
 }
+
 /* Home Page */
 
 html {
@@ -44,14 +45,13 @@ li {
 
 p {
   font-size: 2.8rem;
-  font-family: 'New Tegomin';
-} 
+  font-family: "New Tegomin";
+}
 
 button,
 label,
 input {
   font-size: 2.4rem;
-  
 }
 h2 {
   font-size: 3.5rem;
@@ -91,6 +91,7 @@ h1 {
 }
 
 /* Nav Section*/
+
 .main-head {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   z-index: 2;
@@ -123,9 +124,10 @@ a:hover {
   font-family: "Vibes", sans-serif;
   color: #423e3e;
 }
+
 .nav-links {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex: 1 1 20rem;
 }
 
@@ -150,6 +152,11 @@ a:hover {
 
 .hero-introduction h2 {
   padding-top: 3rem;
+}
+
+.hero-introduction a {
+  padding: 2rem 8rem;
+  margin-bottom: 4rem;
 }
 
 .hero-images {
@@ -177,17 +184,17 @@ a:hover {
 
 .socialMedia ul {
   display: flex;
+  justify-content:center;
   flex: 1 1 40rem;
   align-items: center;
 }
 
-.socialMedia ul li img {
+/* .socialMedia ul li img {
   border: none;
   padding: 1.5rem;
-  margin: 2rem 1rem;
+  margin: 1rem 1rem;
   border-radius: 20%;
-  border-color: gray;
-}
+} */
 
 .plant {
   position: absolute;
@@ -236,7 +243,6 @@ a:hover {
 .burger,
 .menu-check {
   display: none;
-  cursor: pointer;
 }
 
 /*Footer Section*/
@@ -249,12 +255,12 @@ footer {
   flex-wrap: wrap;
 }
 
-/* footer ul{
+.footer2 ul{
     display: flex;
     flex: 1 1 40rem;
     justify-content: space-between;
     align-items: center;
-} */
+} 
 
 footer h4 {
   flex: 3 1 40rem;
@@ -262,33 +268,179 @@ footer h4 {
   text-align: center;
 }
 
-@media screen and(max-width:842px) {
+button:focus {
+  background: gray;
+  color: white;
+}
+
+input:focus {
+  border: 4px solid rgb(148, 148, 197);
+}
+
+
+/*portfolio section*/
+.wrapper {
+  width: 100%;
+  padding-bottom: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  font-family: "New Tegomin";
+  text-shadow: 0.075em 0.08em 0.1em rgba(0, 0, 0, 1);
+  color: white;
+  background-color: #a2a59c;
+}
+
+.Portfolio-title {
+  text-align: center;
+  font-size: 9rem;
+  font-weight: 500;
+  padding-top: 3rem;
+  
+}
+
+.polaroid {
+  background: rgb(255, 255, 255);
+  padding: 3rem;
+  box-shadow: 30px 20px 30px rgb(92, 87, 87); 
+  height: 80%;
+  margin-left: 5rem;
+
+}
+
+.polaroid img {
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  font-size: 6rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.caption a {
+  font-size: 4.3rem;
+  font-weight: 600;
+}
+
+.item {
+  width: 32%;
+  display: inline-block;
+  margin-top: 2rem;
+  filter: grayscale(70%);
+}
+.item .polaroid:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n + 1) {
+  transform: scale(0.8, 0.8) rotate(4deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n + 1) .polaroid:before {
+  transform: rotate(6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+.item:nth-of-type(4n + 2) {
+  transform: scale(0.8, 0.8) rotate(-5deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n + 2) .polaroid:before {
+  transform: rotate(-6deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
+}
+.item:nth-of-type(4n + 4) {
+  transform: scale(0.8, 0.8) rotate(3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n + 4) .polaroid:before {
+  transform: rotate(4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+}
+.item:nth-of-type(4n + 3) {
+  transform: scale(0.8, 0.8) rotate(-3deg);
+  transition: all 0.35s;
+}
+.item:nth-of-type(4n + 3) .polaroid:before {
+  transform: rotate(-4deg);
+  height: 20%;
+  width: 47%;
+  bottom: 30px;
+  right: 12px;
+  box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
+}
+.item:hover {
+  filter: none;
+  transform: scale(1, 1) rotate(0deg) !important;
+  transition: all 0.35s;
+}
+.item:hover .polaroid:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transform: rotate(0deg);
+  height: 90%;
+  width: 90%;
+  bottom: 0%;
+  right: 5%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
+  transition: all 0.35s;
+}
+
+/*portfolio section ends */
+
+
+@media screen and (max-width: 1343px) {
   .hero {
     width: 100%;
   }
+  .title {
+    font-size: 7rem;
+  }
+
   .hero-introduction p {
     padding: 5rem 3rem;
   }
+
   /*Burger Thing*/
   .burger {
     position: relative;
     display: block;
-    transition: all 0.5s ease;
+    cursor: pointer;
+    margin-right: 5rem;
   }
   .burger span {
     padding: 0.2rem 2rem;
     background: #525252;
     margin: 0.5rem 0rem;
     display: block;
+    transition: all 0.5s ease;
   }
-  .nav-links a {
+
+  .nav-links {
     color: white;
     font-size: 4rem;
     font-weight: 600;
-    text-decoration: underline;
   }
+
   .nav-links {
-    background: #414141;
+    background: #686363;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -298,24 +450,99 @@ footer h4 {
     align-items: center;
     transition: transform 1s ease;
   }
+
+  .nav-open li a {
+    color: white;
+    font-weight: 500;
+  }
+
   .nav-open {
     transform: translate(-100%);
   }
+
   .toggle .line1 {
     transform: rotateZ(45deg) translateY(300%);
     background: white;
   }
+
   .toggle .line2 {
     opacity: 0;
   }
+
   .toogle .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+    background: white;
+  }
+
+  .toogle .line4 {
+    transform: rotateZ(-45deg) translateY(-300%);
+    background: white;
+  }
+
+  .toogle .line5 {
     transform: rotateZ(-45deg) translateY(-300%);
     background: white;
   }
 }
 
-.own_h1{
-  font-family: "Ruhl", sans-serif;
-
+@media screen and (max-width: 850px) and (min-width: 320px) {
+  .hero {
+    width: 100%;
+  }
+  html {
+    display: flex;
+  }
+  .socialMedia {
+    display: none;
+  }
+  #logo {
+    font-size: 2.5rem;
+  }
+  .title {
+    font-size: 5rem;
+  }
+  .photography {
+    font-size: 2.7rem;
+  }
+  .quote {
+    font-size: 2rem;
+  }
+  .link-portfolio {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  .hero-introduction a {
+    padding: 1rem 2rem;
+  }
 }
 
+
+/* Portfolio */
+/* .Portfolio {
+  display: grid;
+  height: 60%;
+  grid-template-columns: repeat(3, 1fr);
+  /* position: relative; */
+/* }
+.Portfolio img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+.Portfolio1 {
+  grid-column: 1/3;
+}
+.Portfolio2 {
+  grid-column: 3/4;
+  grid-row: 1/3;
+}
+.Portfolio-head {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: var(--background-color);
+  padding: 5rem 10rem;
+  text-align: center;
+} */ 
