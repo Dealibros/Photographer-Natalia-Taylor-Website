@@ -9,22 +9,22 @@
 /* Font Styles */
 @font-face {
   font-family: "Ruhl";
-  src: url("fonts/FrankRuhlLibre-Regular.ttf");
+  src: url("../fonts/FrankRuhlLibre-Regular.ttf");
 }
 
 @font-face {
   font-family: "Ruhl Medium";
-  src: url("fonts/FrankRuhlLibre-Medium.ttf");
+  src: url("../fonts/FrankRuhlLibre-Medium.ttf");
 }
 
 @font-face {
   font-family: "Vibes";
-  src: url("fonts/GreatVibes-Regular.ttf");
+  src: url("../fonts/GreatVibes-Regular.ttf");
 }
 
 @font-face {
   font-family: "New Tegomin";
-  src: url("fonts/NewTegomin-Regular.ttf");
+  src: url("../fonts/NewTegomin-Regular.ttf");
 }
 
 /* Home Page */
@@ -295,8 +295,7 @@ input:focus {
   text-align: center;
   font-size: 9rem;
   font-weight: 500;
-  padding-top: 3rem;
-  
+  padding-top: 3rem; 
 }
 
 .polaroid {
@@ -353,6 +352,7 @@ input:focus {
   transform: scale(0.8, 0.8) rotate(-5deg);
   transition: all 0.35s;
 }
+
 .item:nth-of-type(4n + 2) .polaroid:before {
   transform: rotate(-6deg);
   height: 20%;
@@ -361,10 +361,12 @@ input:focus {
   right: 12px;
   box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4);
 }
+
 .item:nth-of-type(4n + 4) {
   transform: scale(0.8, 0.8) rotate(3deg);
   transition: all 0.35s;
 }
+
 .item:nth-of-type(4n + 4) .polaroid:before {
   transform: rotate(4deg);
   height: 20%;
@@ -373,10 +375,12 @@ input:focus {
   right: 12px;
   box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
 }
+
 .item:nth-of-type(4n + 3) {
   transform: scale(0.8, 0.8) rotate(-3deg);
   transition: all 0.35s;
 }
+
 .item:nth-of-type(4n + 3) .polaroid:before {
   transform: rotate(-4deg);
   height: 20%;
@@ -385,11 +389,13 @@ input:focus {
   right: 12px;
   box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.3);
 }
+
 .item:hover {
   filter: none;
   transform: scale(1, 1) rotate(0deg) !important;
   transition: all 0.35s;
 }
+
 .item:hover .polaroid:before {
   content: "";
   position: absolute;
@@ -402,14 +408,26 @@ input:focus {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2);
   transition: all 0.35s;
 }
-
 /*portfolio section ends */
 
+/*Testimonials section starts*/
+ /* body, .card {
+  background-color: green;
+} */
+.card-title {
+  text-align: center;
+}
+
+/*Testimonials section ends*/
+
+
+ /*Media Query starts*/
 
 @media screen and (max-width: 1343px) {
   .hero {
     width: 100%;
   }
+
   .title {
     font-size: 7rem;
   }
@@ -419,6 +437,7 @@ input:focus {
   }
 
   /*Burger Thing*/
+
   .burger {
     position: relative;
     display: block;
@@ -515,3 +534,5 @@ input:focus {
     padding: 1rem 2rem;
   }
 }
+
+/*Media Query ends*/
