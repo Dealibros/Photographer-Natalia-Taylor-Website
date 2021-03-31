@@ -187,6 +187,11 @@ a:hover {
   justify-content:center;
   flex: 1 1 40rem;
   align-items: center;
+
+}
+
+.socialMedia {
+  margin: 1rem 0rem 3rem 0rem;
 }
 
 /* .socialMedia ul li img {
@@ -411,13 +416,45 @@ input:focus {
 /*portfolio section ends */
 
 /*Testimonials section starts*/
- /* body, .card {
-  background-color: green;
-} */
-.card-title {
+.card-top-title {
   text-align: center;
+  font-size: 8rem;
+  margin-top: 2rem;
+ 
 }
 
+.card-text {
+  font-size: 2.5rem;
+  padding: 0rem 1.8rem;
+}
+
+
+.body-testimonials {
+ background-color: grey;
+}
+
+.styleImg {
+ border-radius: 50%;
+ border: 0.3rem solid #e6eee9;
+}
+
+.card {
+  border: none;
+  margin-bottom: 50px;
+  background-color: grey;
+}
+
+.card-title {
+   margin-left: 1.8rem;
+   color: rgb(196, 193, 193);
+}
+
+.card-text-bottom {
+  font-size: 2.5rem;
+  color: rgb(85, 90, 82);
+  font-weight: 800;
+  margin-left: 1.8rem
+}
 /*Testimonials section ends*/
 
 
@@ -504,6 +541,14 @@ input:focus {
   }
 }
 
+@media screen and (max-width: 1240px) and (min-width: 850px) {
+.item {
+    height: 100%;
+    width: 40%;
+    margin-left: 3rem;
+
+  }
+}
 @media screen and (max-width: 850px) and (min-width: 320px) {
   .hero {
     width: 100%;
@@ -532,6 +577,29 @@ input:focus {
   }
   .hero-introduction a {
     padding: 1rem 2rem;
+  }
+
+  .caption a {
+    font-size: 2.3rem;
+  }
+
+  .item {
+    height: 100%;
+    width: 40%;
+    margin-left: 3rem;
+
+  }
+}
+
+@media screen and (max-width: 550px) and (min-width: 320px) {
+  .caption a {
+    font-size: 1.5rem;
+  }
+
+  .item {
+    height: 100%;
+    width: 80%;
+
   }
 }
 

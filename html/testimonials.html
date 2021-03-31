@@ -10,26 +10,11 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
-    <style>
-      body,
-      .card {
-        background-color: grey;
-      }
-      .styleImg {
-        border-radius: 50%;
-        border: solid #e7bd33;
-      }
-      .card {
-        border: none;
-        margin-bottom: 50px;
-      }
-    </style>
-
     <link rel="stylesheet" href="../css/style.css" />
     <title>Document</title>
   </head>
 
-  <body>
+  <body class="body-testimonials">
     <header class="main-head">
       <nav>
         <h1 id="logo">Natalia Taylor</h1>
@@ -39,7 +24,7 @@
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#">Testimonials</a></li>
-          <li><a href="contactForm.html">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
         <div class="burger">
           <span class="line1"></span>
@@ -48,8 +33,9 @@
         </div>
       </nav>
     </header>
-<h1 class="title">Testimonials</h1>
-    <div class="Testimonials container p-5">
+
+<h1 class="card-top-title">Testimonials</h1>
+    <div class="Testimonials container p-5 text">
       <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-3 col-lg-3 col-xl-3">
@@ -61,7 +47,7 @@
           </div>
           <div class="col-md-9 col-lg-9 col-xl-9">
             <div class="card-body">
-              <h5 class="card-title">Portraits</h5>
+              <h5 class="card-title">PORTRAITS</h5>
               <br />
               <p class="card-text">
                 "I just finished spending 2 years designing and building my
@@ -71,7 +57,7 @@
                 time to get to know my perfect appearance and it shows in how
                 perfect my portrait is for me. I can’t wait to do another one!"
               </p>
-              <p class="card-text">
+              <p class="card-text-bottom">
                 <small>Portrait, Hansi Hinterseher 02.03.2021 </small>
               </p>
             </div>
@@ -96,7 +82,7 @@
                 expertise, humor, helpfulness, and team!"
               </p>
               <br />
-              <p class="card-text"><small>Hirsch-Design, 04.06.2020 </small></p>
+              <p class="card-text-bottom"><small>Hirsch-Design, 04.06.2020 </small></p>
             </div>
           </div>
           <div class="col-md-4 col-lg-4 col-xl-4">
@@ -111,7 +97,7 @@
       <hr />
       <div class="card mb-3">
         <div class="row g-0">
-          <div class="col-md-4 col-lg-4 col-xl-4">
+          <div class="col-md-3 col-lg-3 col-xl-3">
             <img
               src="../img/imgTestimonials/companyTeam.jpg"
               class="card-img styleImg"
@@ -131,7 +117,7 @@
                 – highly recommend."
               </p>
               <br />
-              <p class="card-text">
+              <p class="card-text-bottom">
                 <small>Democrats Party Event-Company, 04.08.2020 </small>
               </p>
             </div>
@@ -157,7 +143,7 @@
                 and I can honestly say they don’t come any better than Natalia."
               </p>
               <br />
-              <p class="card-text">
+              <p class="card-text-bottom">
                 <small>Chris and Ethan, 09.11.2004</small>
               </p>
             </div>
@@ -195,7 +181,7 @@
                 every image a piece of art in it’s own right. WOW!!!"
               </p>
               <br />
-              <p class="card-text"><small>Tina and Ryan, 22.09.2019</small></p>
+              <p class="card-text-bottom"><small>Tina and Ryan, 22.09.2019</small></p>
             </div>
           </div>
         </div>
@@ -220,7 +206,7 @@
                 $300-$500."
               </p>
               <br />
-              <p class="card-text">
+              <p class="card-text-bottom">
                 <small>Sofies Fashion House, 02.11.2019</small>
               </p>
             </div>
@@ -257,7 +243,7 @@
                 Natalia to anyone looking for a photographer."
               </p>
               <br />
-              <p class="card-text">
+              <p class="card-text-bottom">
                 <small>Automotive Event at Hilton, 23.01.2021</small>
               </p>
             </div>
@@ -286,6 +272,7 @@
         </li>
       </ul>
     </footer>
+    <script src="../js/app.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
