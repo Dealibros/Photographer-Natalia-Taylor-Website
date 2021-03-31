@@ -6,6 +6,7 @@
 #body {
   font-family: "Nunito", sans-serif;
   background-color: #906272;
+  width: 100%;
 }
 
 a {
@@ -32,7 +33,7 @@ a {
   position: relative;
   margin-top: -17%;
   margin-left: 5%;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 #image {
@@ -48,6 +49,8 @@ a {
 
 .textAbout {
   text-align: justify;
+  font-family: "Nunito", sans-serif;
+
 }
 
 .awards {
@@ -55,6 +58,9 @@ a {
 }
 
 @media screen and (max-width: 533px) {
+  .textAbout{
+    font-size: 110%;
+  }
   .price {
     font-size: 1.7rem;
   }
@@ -65,26 +71,29 @@ a {
 }
 
 #bodyContact {
+background-image: url("../img/imgContactAbout/camera.jpg");
   font-family: "Nunito", sans-serif;
-  background-image: url("../img/imgContactAbout/camera.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: rgba(233, 229, 229, 0.452);
+  width: 100%;
 }
-
+.mainContact{
+  margin-top: 10%;
+}
 .lense {
-  width: 15vmin;
+  width: 14vmin;
 }
-
+.contactMe{
+  font-family: "Nunito", sans-serif;
+}
 .layer {
   background-color: #6d5a618a;
   color: rgba(233, 229, 229, 0.452);
 }
 
-.links > a {
-  color: rgba(233, 229, 229, 0.452);
-}
+
 
 .input {
   height: 7vh;
@@ -92,6 +101,7 @@ a {
   background: rgba(233, 229, 229, 0.452);
   outline: none;
   border: none;
+  font-size: 150%;
 }
 
 .btn {
@@ -102,23 +112,32 @@ a {
   color: rgba(233, 229, 229, 0.452);
 }
 
+.send{
+  font-family: "Nunito", sans-serif;
+  font-size: 150%;
+
+}
+
 .textarea {
   border-radius: 10px;
   background: rgba(233, 229, 229, 0.452);
   outline: none;
   border: none;
+  font-size: 150%;
+
 }
 
 form {
-  width: 50%;
+  width: 100%;
 }
 
 
-@media screen and (max-width: 550px) and (min-width: 900px) {
-form {
-    width: 100%;
+@media screen and (min-width: 550px) {
+  form {
+    width: 50%;
   }
 }
+
 
 
 
@@ -132,15 +151,5 @@ form {
   background: rgb(142, 182, 163);
 }
 
-.navContact {
-  border-bottom: 1px solid rgba(233, 229, 229, 0.452);
-}
 
-.footerContact {
-  border-top: 1px solid rgba(233, 229, 229, 0.452);
-}
 
-.natalia > a {
-  color: rgba(233, 229, 229, 0.452);
-  font-size: 2.2rem;
-}
