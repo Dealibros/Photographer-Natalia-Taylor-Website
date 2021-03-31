@@ -108,6 +108,10 @@ nav {
   background-color: #b49999;
 }
 
+nav ul {
+  padding-right: 4rem;
+}
+
 a:hover {
   color: rgb(104, 117, 111);
 }
@@ -416,6 +420,11 @@ input:focus {
 /*portfolio section ends */
 
 /*Testimonials section starts*/
+.Testimonials {
+padding-right: 20rem !important;
+padding-left: 20rem !important;
+}
+
 .card-top-title {
   text-align: center;
   font-size: 8rem;
