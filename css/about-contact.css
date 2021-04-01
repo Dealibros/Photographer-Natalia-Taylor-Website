@@ -1,12 +1,25 @@
+/* Font Styles */
+@font-face {
+  font-family: "New Tegomin";
+  src: url("../fonts/NewTegomin-Regular.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
 #body {
-  font-family: "Nunito", sans-serif;
   background-color: #906272;
   width: 100%;
+}
+
+.textAbout {
+font-family: "New Tegomin" !important;
+}
+
+.textMe {
+  padding-bottom: 1.5rem;
 }
 
 a {
@@ -80,7 +93,7 @@ background-image: url("../img/imgContactAbout/camera.jpg");
   width: 100%;
 }
 .mainContact{
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .lense {
   width: 14vmin;
@@ -124,7 +137,11 @@ background-image: url("../img/imgContactAbout/camera.jpg");
   outline: none;
   border: none;
   font-size: 150%;
+  margin-bottom: 3rem;
+}
 
+.row1 {
+  margin-bottom: 2rem;
 }
 
 form {
