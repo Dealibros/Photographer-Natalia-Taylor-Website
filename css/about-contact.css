@@ -92,9 +92,11 @@ background-image: url("../img/imgContactAbout/camera.jpg");
   color: rgba(233, 229, 229, 0.452);
   width: 100%;
 }
+
 .mainContact{
   margin-top: 5%;
 }
+
 .lense {
   width: 14vmin;
 }
@@ -154,9 +156,6 @@ form {
     width: 50%;
   }
 }
-
-
-
 
 @media screen and (max-width: 550px) {
   form {
