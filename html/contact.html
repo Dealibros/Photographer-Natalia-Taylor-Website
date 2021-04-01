@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
 
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
@@ -23,49 +23,59 @@
   <title>Contact</title>
 </head>
 
-<body id="bodyContact" class="">
+<body id="bodyContact" >
 
   <div class="layer ">
 
-     <header class="main-head mb-5">
-        <nav>
-            <h1 class="text-dark" id="logo"> Natalia Taylor </h1>
-            
-            <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-            <li><a href="#">Contact</a></li>
+    <header class="main-head mb-5">
+      <nav>
+        <h1 class="text-dark" id="logo"> Natalia Taylor </h1>
+
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
         <div class="burger">
-            <span class="line1"></span>
-            <span class="line2"></span>
-            <span class="line3"></span>
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
 
         </div>
-        </nav>
+      </nav>
     </header>
 
-    
 
-  <div class="mainContact">
-    <div class="d-flex justify-content-center align-items-center mt-5">
-      <h1 class="text-center  display-2 contactMe">c</h1>
-      <div class="lenseBox">
-        <img src="../img/imgContactAbout/lense.png" class="img-fluid lense" alt="lense">
+
+    <div class="mainContact">
+      <div class="d-flex justify-content-center align-items-center mt-5">
+        <h1 class="text-center  display-2 contactMe">c</h1>
+        <div class="lenseBox">
+          <img src="../img/imgContactAbout/lense.png" class="img-fluid lense animate__animated animate__rotateIn"  alt="lense">
+        </div>
+        <h1 class="text-center  display-2 contactMe">ontact me</h1>
+
+
       </div>
-      <h1 class="text-center  display-2 contactMe">ontact me</h1>
-
-
-    </div>
-    <div class=" mb-5 mt-5 p-4">
+      <div class=" mb-5 mt-5 p-4">
 
 
 
-      <form class="text-light m-auto ">
+        <form class="text-light m-auto ">
 
-        <div class="row  g-4">
+          <div class="row  g-4">
+
+            <div class=" col-md-6 col-lg-6 col-xl-6 col-12">
+              <label for="FirstName" class="form-label h4">First Name</label>
+              <input type="text" class="input form-control" id="FirstName">
+            </div>
+
+            <div class=" col-md-6 col-lg-6 col-xl-6 col-12">
+              <label for="lastName" class="form-label h4">Last Name</label>
+              <input type="text" class="input form-control" id="lastName">
+            </div>
 
           <div class="row1 col-md-6 col-lg-6 col-xl-6 col-12">
             <label for="FirstName" class="form-label h4">First Name</label>
@@ -77,6 +87,10 @@
             <input type="text" class="input form-control" id="lastName">
           </div>
 
+            <div class=" col-md-6 col-lg-6 col-xl-6 col-12">
+              <label for="telephone" class="form-label h4">Telephone number</label>
+              <input type="text" class="input form-control" id="lastName">
+            </div>
 
           <div class="row1 col-md-6 col-lg-6 col-xl-6 col-12">
             <label for="address" class="form-label h4">Address</label>
@@ -97,23 +111,34 @@
               Subscribe </label>
           </div>
 
-          <div class=" col-md-6 col-lg-6 col-xl-6 col-12">
-            <label for="issue" class="form-label h4">Topic</label>
-            <select id="issue" class="form-select input">
-              <option value=""></option>
-              <option>General Information</option>
-              <option>Your Dog</option>
-              <option>Events</option>
-              <option>Nature</option>
-              <option>Portrait</option>
-            </select>
+            <div class=" col-md-6 col-lg-6 col-xl-6 col-12">
+              <label for="issue" class="form-label h4">Topic</label>
+              <select id="issue" class="form-select input">
+                <option value=""></option>
+                <option>General Information</option>
+                <option>Your Dog</option>
+                <option>Events</option>
+                <option>Nature</option>
+                <option>Portrait</option>
+              </select>
+            </div>
+
+
           </div>
 
 
-        </div>
 
 
-
+          <div class=" d-flex flex-column justify-content-center mt-5 mb-5">
+            <div class="">
+              <textarea class=" textarea w-100 text-center  " id="message" placeholder="your message"
+                rows="8"></textarea>
+            </div>
+            <div class=" d-flex mt-3 mb-5">
+              <button type="submit" id="sendButton" onclick="submitData()"
+                class="btn text-center p-1 m-auto w-25 align-self-center"><span class="m-1 send">Send</span></button>
+            </div>
+          </div>
 
         <div class=" d-flex flex-column justify-content-center mt-5 mb-5">
           <div class="">
@@ -124,32 +149,30 @@
                           </div>
                         </div>
 
-                    </form>
 
 
-               
 
-        </div>
-  </div>
-
-
-        <footer class="footer2 mt-5">
-        <h4>Natalia Taylor &copy; 2021</h4>
-        <ul>
-            <li><a href="#"><img src="../img/youtube-symbol 1.svg" alt="youtube-social-media"></a></li>
-            <li><a href="#"><img src="../img/twitter 1.svg" alt="twitter-social-media"></a></li>
-            <li><a href="#"><img src="../img/instagram 1.svg" alt="instagram-social-media"></a></li>
-        </ul>
-    </footer>
-
-      
+      </div>
     </div>
 
-    <script src="../js/app.js"></script>
-    <script type="text/javascript" src="js/about-contact.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
+
+    <footer class="footer2 mt-5">
+      <h4>Natalia Taylor &copy; 2021</h4>
+      <ul>
+        <li><a href="#"><img src="../img/youtube-symbol 1.svg" alt="youtube-social-media"></a></li>
+        <li><a href="#"><img src="../img/twitter 1.svg" alt="twitter-social-media"></a></li>
+        <li><a href="#"><img src="../img/instagram 1.svg" alt="instagram-social-media"></a></li>
+      </ul>
+    </footer>
+
+
+  </div>
+
+  <script src="../js/app.js"></script>
+  <script type="text/javascript" src="../js/about-contact.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

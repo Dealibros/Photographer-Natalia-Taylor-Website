@@ -8,7 +8,7 @@ for(let  image of images){
 });
 image.addEventListener("mouseout", () => {
     image.style.filter="grayscale()";
-    body.style.backgroundColor= "#906272";
+    body.style.backgroundColor= "#744958";
 });
 }
 function submitData () {
