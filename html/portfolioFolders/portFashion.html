@@ -93,7 +93,7 @@ class Fashion {
        divideDiv1() {
         return `
         <div class="col cardZoom">
-        <div class="card rounded-3 shadow bgColor-3">
+        <div class="card rounded-3 shadow bgColor-3 m-3">
         <a href="../../img/imgPortfolio/portFashion/${this.imgUrl}" class="fancbox" data-fancybox="gallery2">
         <img src="../../img/imgPortfolio/portFashion/${this.imgUrl}" class="d-md-block card-img-top" alt="..."  width="100%"  height="100%">
         </a>
@@ -117,16 +117,16 @@ new Fashion(5,"Fashion5.jpg");
 new Fashion(6,"Fashion6.jpg");
 new Fashion(7,"Fashion7.jpg");
 new Fashion(8,"Fashion8.jpg");
-new Fashion(5,"Fashion5.jpg");
-new Fashion(6,"Fashion6.jpg");
-new Fashion(7,"Fashion7.jpg");
-new Fashion(8,"Fashion8.jpg");
+new Fashion(5,"Fashion9.jpg");
+new Fashion(6,"Fashion10.jpg");
+new Fashion(7,"Fashion11.jpg");
+new Fashion(8,"Fashion12.jpg");
 
 
 
 
 for (let value of arrayFashion) {
-  document.getElementById("showH1Fashion").innerHTML = `<section id="events"><h1 class="text-center p-3 textColor-1 mt-4 mb-2">Fashion</h1></section>`;
+  document.getElementById("showH1Fashion").innerHTML = `<section id="events"><h1 class="text-center title-little-cards p-3 textColor-1 mt-4 mb-2">Fashion</h1></section>`;
   document.getElementById("showFashionPic").innerHTML += `${value.divideDiv1()}`;
 }
 

@@ -165,8 +165,9 @@ margin-top: 3rem;
   text-align: center;
 
 }
-/* #showEventsPic{
-  min-height: 10rem;
-  background-color: #fff;
-} */
 
+.title-little-cards {
+  font-size: 7rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

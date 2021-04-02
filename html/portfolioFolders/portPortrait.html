@@ -48,6 +48,8 @@
           <span class="line1"></span>
           <span class="line2"></span>
           <span class="line3"></span>
+          <span class="line4"></span>
+          <span class="line5"></span>
         </div>
       </nav>
 
@@ -100,7 +102,7 @@ class Portrait{
   divideDiv1() {
     return `
     <div class="col cardZoom">
-    <div class="card h-100 rounded-3 shadow bgColor-3">
+    <div class="card h-100 rounded-3 shadow bgColor-3 m-3">
     <a href="../../img/imgPortfolio/portPortrait/${this.imgUrl}" class="fancbox" data-fancybox="gallery1">
     <img src="../../img/imgPortfolio/portPortrait/${this.imgUrl}" class=" d-md-block card-img-top" alt="..."  width="100%"  height="100%">
       </a>
@@ -124,25 +126,25 @@ new Portrait(5,"portrait5.jpg");
 new Portrait(6,"portrait6.jpg");
 new Portrait(7,"portrait7.jpg");
 new Portrait(8,"portrait8.jpg");
-new Portrait(9,"portrait5.jpg");
-new Portrait(10,"portrait6.jpg");
-new Portrait(11,"portrait7.jpg");
-new Portrait(12,"portrait8.jpg");
-new Portrait(13,"portrait5.jpg");
-new Portrait(14,"portrait6.jpg");
-new Portrait(15,"portrait7.jpg");
-new Portrait(16,"portrait8.jpg");
-new Portrait(10,"portrait6.jpg");
-new Portrait(11,"portrait7.jpg");
-new Portrait(12,"portrait8.jpg");
-new Portrait(13,"portrait5.jpg");
+new Portrait(9,"portrait9.jpg");
+new Portrait(10,"portrait10.jpg");
+new Portrait(11,"portrait11.jpg");
+new Portrait(12,"portrait12.jpg");
+new Portrait(13,"portrait13.jpg");
+new Portrait(14,"portrait14.jpg");
+new Portrait(15,"portrait15.jpg");
+new Portrait(16,"portrait16.jpg");
+new Portrait(10,"portrait17.jpg");
+new Portrait(11,"portrait18.jpg");
+new Portrait(12,"portrait19.jpg");
+new Portrait(13,"portrait20.jpg");
 
 
 
 
 // looping through the objects and printing them on the browser
 for (let value of arrayPortrait) {
-  document.getElementById("showH1Portrait").innerHTML = `<section id=""><h1 class="text-center p-3 textColor-1 mb-2">Portrait</h1></section>`;
+  document.getElementById("showH1Portrait").innerHTML = `<section id=""><h1 class=" title-little-cards text-center p-3 textColor-1 mb-2">Portraits</h1></section>`;
   document.getElementById("showPortraitPic").innerHTML += `${value.divideDiv1()}`;
 }
     </script>

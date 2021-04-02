@@ -106,7 +106,7 @@ class Events {
        divideDiv1() {
         return `
         <div class="col cardZoom">
-        <div class="card h-100 rounded-3 shadow bgColor-3">
+        <div class="card h-100 rounded-3 shadow bgColor-3 m-3">
         <a href="../../img/imgPortfolio/portEvents/${this.imgUrl}" class="fancbox" data-fancybox="gallery2">
         <img src="../../img/imgPortfolio/portEvents/${this.imgUrl}" class="d-md-block card-img-top img-thumbnail" alt="..."  width="100%"  height="100%">
        </a>
@@ -132,18 +132,18 @@ new Events(5,"events5.jpg");
 new Events(6,"events6.jpg");
 new Events(7,"events7.jpg");
 new Events(8,"events8.jpg");
-new Events(1,"events1.jpg");
-new Events(2,"events2.jpg");
-new Events(3,"events3.jpg");
-new Events(4,"events4.jpg");
-new Events(5,"events5.jpg");
-new Events(6,"events6.jpg");
-new Events(7,"events7.jpg");
-new Events(8,"events8.jpg");
-new Events(1,"events1.jpg");
-new Events(2,"events2.jpg");
-new Events(3,"events3.jpg");
-new Events(4,"events4.jpg");
+new Events(1,"events9.jpg");
+new Events(2,"events10.jpg");
+new Events(3,"events11.jpg");
+new Events(4,"events12.jpg");
+new Events(5,"events13.jpg");
+new Events(6,"events14.jpg");
+new Events(7,"events15.jpg");
+new Events(8,"events16.jpg");
+new Events(1,"events17.jpg");
+new Events(2,"events18.jpg");
+new Events(3,"events19.jpg");
+new Events(4,"events20.jpg");
 
 
 
@@ -152,7 +152,7 @@ new Events(4,"events4.jpg");
 
 
 for (let value of arrayEvents) {
-  document.getElementById("showH1Events").innerHTML = `<section id="events"><h1 class="text-center p-3 textColor-1 mt-4 mb-2">Events</h1></section>`;
+  document.getElementById("showH1Events").innerHTML = `<section id="events"><h1 class="text-center title-little-cards p-3 textColor-1 mt-4 mb-2">Events</h1></section>`;
   document.getElementById("showEventsPic").innerHTML += `${value.divideDiv1()}`;
 }
 
